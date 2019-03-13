@@ -67,6 +67,7 @@ class ComposerStaticInit9a3675f56a3116da8b863b7d85d384dd
     );
 
     public static $classMap = array (
+        'CSV' => __DIR__ . '/../..' . '/src/csv.php',
         'Help' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Help.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
@@ -615,6 +616,7 @@ class ComposerStaticInit9a3675f56a3116da8b863b7d85d384dd
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
+        'midterm' => __DIR__ . '/../..' . '/src/project.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
