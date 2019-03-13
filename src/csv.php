@@ -14,7 +14,7 @@
         }
         public function createArray(String $file): array
         {
-            $records =fgetcsv($file);
+            return $records[] = str_getcsv($file);
         }
         public function printArray(ArrayObject $records): string
         {
