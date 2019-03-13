@@ -7,17 +7,18 @@
  */
     class CSV
     {
-        public function openCSV(String $name)
+        public static function openCSV(String $name)
         {
             return $file = fopen($name, "r");
         }
-        public function createArray(String $file): array
+        public static function createArray(String $file): array
         {
             return $records[] = str_getcsv($file);
         }
-        public function printArray(ArrayObject $records): string
+        public static function printArray(Array $records)
         {
-            return print_r($records);
+            $result = print_r($records);
+            return $result;
         }
     }
     final class midterm extends csv
@@ -25,9 +26,9 @@
         public function project()
         {
             $name = "SacramentocrimeJanuary2006.csv";
-            readCSV($name);
-            createArray($name);
-            printArray($records);
-            fclose($name);
+            csv::openCSV($name);
+            csv::createArray($name);
+            csv::printArray(csv::createArray($name));
+            fclose(csv::openCSV($name));
         }
     }
