@@ -5,6 +5,7 @@
  * Date: 3/12/2019
  * Time: 10:05 PM
  */
+
 final class midterm extends csv
 {
     public function project()
@@ -13,6 +14,6 @@ final class midterm extends csv
         readCSV($name);
         createArray($name);
         printArray($records);
-        closeCSV($name);
+        fclose($name);
     }
 }

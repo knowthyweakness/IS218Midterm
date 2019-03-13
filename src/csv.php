@@ -9,8 +9,7 @@
     {
         public function openCSV(String $name)
         {
-            $file = fopen($name, "r");
-
+            return $file = fopen($name, "r");
         }
         public function createArray(String $file): array
         {
@@ -18,11 +17,6 @@
         }
         public function printArray(ArrayObject $records): string
         {
-            print_r($records);
-        }
-        public function closeCSV(String $file)
-        {
-            fclose($file);
-
+            return print_r($records);
         }
     }

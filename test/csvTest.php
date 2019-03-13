@@ -28,10 +28,4 @@ final class csvTest extends TestCase
             method_exists(CSV::class, 'printArray')
         );
     }
-    public function testCloseCSV(): void
-    {
-        $this->assertTrue(
-            method_exists(CSV::class, 'closeCSV')
-        );
-    }
 }
