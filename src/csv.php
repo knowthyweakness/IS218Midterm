@@ -20,3 +20,14 @@
             return print_r($records);
         }
     }
+    final class midterm extends csv
+    {
+        public function project()
+        {
+            $name = "SacramentocrimeJanuary2006.csv";
+            readCSV($name);
+            createArray($name);
+            printArray($records);
+            fclose($name);
+        }
+    }
