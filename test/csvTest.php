@@ -12,6 +12,26 @@ final class csvTest extends TestCase
 
     public function testOpenCSV(): void
     {
-
+        $this->assertTrue(
+            method_exists(CSV::class, 'openCSV')
+        );
+    }
+    public function testCreateArray(): void
+    {
+        $this->assertTrue(
+            method_exists(CSV::class, 'createArray')
+        );
+    }
+    public function testPrintArray(): void
+    {
+        $this->assertTrue(
+            method_exists(CSV::class, 'printArray')
+        );
+    }
+    public function testCloseCSV(): void
+    {
+        $this->assertTrue(
+            method_exists(CSV::class, 'closeCSV')
+        );
     }
 }
