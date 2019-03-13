@@ -7,13 +7,22 @@
  */
     class CSV
     {
-
-        public function readCSV(String $name): array
+        public function openCSV(String $name)
         {
             $file = fopen($name, "r");
-            $fileArray = fgetcsv($file);
-            print_r($fileArray);
-            fclose($file);
-        }
 
+        }
+        public function createArray(String $file): array
+        {
+            $records =fgetcsv($file);
+        }
+        public function printArray(ArrayObject $records): string
+        {
+            print_r($records);
+        }
+        public function closeCSV(String $file)
+        {
+            fclose($file);
+
+        }
     }
