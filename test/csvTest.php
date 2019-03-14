@@ -28,4 +28,16 @@ final class csvTest extends TestCase
             method_exists(CSV::class, 'printArray')
         );
     }
+    public function testGetArray(): void
+    {
+        $this->assertTrue(
+            method_exists(html::class, 'getArray')
+        );
+    }
+    public function testMakeTable(): void
+    {
+        $this->assertTrue(
+            method_exists(html::class, 'makeTable')
+        );
+    }
 }
