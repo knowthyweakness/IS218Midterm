@@ -13,7 +13,11 @@
         }
         public static function createArray(String $file): array
         {
-            return $records[] = str_getcsv($file);
+            while(($row = fgetcsv($file, 0, ",")) !== FALSE)
+            {
+                $records[] = $row;
+            }
+            return $records;
         }
         public static function printArray(Array $records)
         {
@@ -21,7 +25,7 @@
             return $result;
         }
     }
-    final class midterm extends csv
+    final class midterm
     {
         public function project()
         {
