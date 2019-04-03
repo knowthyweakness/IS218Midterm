@@ -12,6 +12,7 @@ final class midterm
     }
     public function project()
     {
+        spl_autoload_register('my_autoloader');
         $name = "SacramentocrimeJanuary2006.csv";
         csv::openCSV($name);
         html::makeTable(csv::printArray(csv::createArray($name)));
