@@ -7,6 +7,9 @@
  */
 final class midterm
 {
+    function my_autoloader($class) {
+        include 'src/' . $class . '.php';
+    }
     public function project()
     {
         $name = "SacramentocrimeJanuary2006.csv";
